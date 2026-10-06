@@ -1,0 +1,128 @@
+[
+    {
+        "state": "Customer says: I was charged $50 for a service I never received.",
+        "questions": {
+            "route": {"type": "choice", "criteria": ["billing", "refund", "cancel"], "instructions": "Which department should handle this?"}
+        },
+        "targets": {"route": [0.1, 0.8, 0.1]}
+    },
+    {
+        "state": "My app keeps crashing when I try to upload files.",
+        "questions": {
+            "route": {"type": "choice", "criteria": ["billing", "refund", "tech"], "instructions": "Which department should handle this?"}
+        },
+        "targets": {"route": [0.0, 0.0, 1.0]}
+    },
+    {
+        "state": "I'm concerned about a security vulnerability in my account.",
+        "questions": {
+            "route": {"type": "choice", "criteria": ["security", "tech", "support"], "instructions": "Which department should handle this?"}
+        },
+        "targets": {"route": [1.0, 0.0, 0.0]}
+    },
+    {
+        "state": "How do I change my subscription plan?",
+        "questions": {
+            "route": {"type": "choice", "criteria": ["billing", "refund", "tech"], "instructions": "Which department should handle this?"}
+        },
+        "targets": {"route": [0.9, 0.05, 0.05]}
+    },
+    {
+        "state": "I need help resetting my password.",
+        "questions": {
+            "route": {"type": "choice", "criteria": ["tech", "support", "security"], "instructions": "Which department should handle this?"}
+        },
+        "targets": {"route": [0.2, 0.7, 0.1]}
+    },
+    {
+        "state": "Someone accessed my account without permission.",
+        "questions": {
+            "route": {"type": "choice", "criteria": ["security", "tech", "support"], "instructions": "Which department should handle this?"}
+        },
+        "targets": {"route": [1.0, 0.0, 0.0]}
+    },
+    {
+        "state": "I want a refund for a charge I didn't authorize.",
+        "questions": {
+            "route": {"type": "choice", "criteria": ["billing", "refund", "cancel"], "instructions": "Which department should handle this?"}
+        },
+        "targets": {"route": [0.1, 0.85, 0.05]}
+    },
+    {
+        "state": "The API returns a 500 error on large payloads.",
+        "questions": {
+            "route": {"type": "choice", "criteria": ["tech", "support", "billing"], "instructions": "Which department should handle this?"}
+        },
+        "targets": {"route": [0.8, 0.1, 0.1]}
+    },
+    {
+        "state": "I want to cancel my subscription immediately.",
+        "questions": {
+            "route": {"type": "choice", "criteria": ["billing", "refund", "cancel"], "instructions": "Which department should handle this?"}
+        },
+        "targets": {"route": [0.05, 0.05, 0.9]}
+    },
+    {
+        "state": "How long does delivery take?",
+        "questions": {
+            "route": {"type": "choice", "criteria": ["support", "billing", "tech"], "instructions": "Which department should handle this?"}
+        },
+        "targets": {"route": [0.8, 0.1, 0.1]}
+    },
+    {
+        "state": "Payment failed on my credit card.",
+        "questions": {
+            "route": {"type": "choice", "criteria": ["billing", "refund", "tech"], "instructions": "Which department should handle this?"}
+        },
+        "targets": {"route": [0.85, 0.05, 0.1]}
+    },
+    {
+        "state": "Feature request: add dark mode.",
+        "questions": {
+            "route": {"type": "choice", "criteria": ["support", "tech", "billing"], "instructions": "Which department should handle this?"}
+        },
+        "targets": {"route": [0.6, 0.3, 0.1]}
+    },
+    {
+        "state": "My order hasn't arrived after 2 weeks.",
+        "questions": {
+            "route": {"type": "choice", "criteria": ["support", "billing", "tech"], "instructions": "Which department should handle this?"}
+        },
+        "targets": {"route": [0.85, 0.1, 0.05]}
+    },
+    {
+        "state": "I can't log in to my account.",
+        "questions": {
+            "route": {"type": "choice", "criteria": ["tech", "support", "security"], "instructions": "Which department should handle this?"}
+        },
+        "targets": {"route": [0.3, 0.4, 0.3]}
+    },
+    {
+        "state": "The app is very slow on my phone.",
+        "questions": {
+            "route": {"type": "choice", "criteria": ["tech", "support", "billing"], "instructions": "Which department should handle this?"}
+        },
+        "targets": {"route": [0.7, 0.2, 0.1]}
+    },
+    {
+        "state": "How do I export my data?",
+        "questions": {
+            "route": {"type": "choice", "criteria": ["support", "tech", "security"], "instructions": "Which department should handle this?"}
+        },
+        "targets": {"route": [0.6, 0.3, 0.1]}
+    },
+    {
+        "state": "Double-charged on my monthly subscription.",
+        "questions": {
+            "route": {"type": "choice", "criteria": ["billing", "refund", "cancel"], "instructions": "Which department should handle this?"}
+        },
+        "targets": {"route": [0.4, 0.5, 0.1]}
+    },
+    {
+        "state": "My credit card was declined.",
+        "questions": {
+            "route": {"type": "choice", "criteria": ["billing", "refund", "support"], "instructions": "Which department should handle this?"}
+        },
+        "targets": {"route": [0.8, 0.1, 0.1]}
+    }
+]
